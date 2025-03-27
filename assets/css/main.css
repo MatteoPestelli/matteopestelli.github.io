@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
 @import url("fontawesome-all.min.css");
 
 /*
@@ -1306,12 +1309,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
-		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
-		background-attachment: fixed;
-		overflow-y: scroll;
+	    background: linear-gradient(135deg, #1a1a1a, #333333);
+	    background-attachment: fixed;
+	    overflow-y: scroll;
 	}
+
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -1324,13 +1326,13 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
-		color: #777777;
-		font-size: 20pt;
-		line-height: 1.75em;
-	}
+		body, input, textarea, select {
+		    font-family: 'Roboto', sans-serif;
+		    font-weight: 300;
+		    color: #333333; /* Testo principale: colore intermedio */
+		    font-size: 20pt;
+		    line-height: 1.75em;
+		}
 
 		@media screen and (max-width: 1680px) {
 
@@ -1364,10 +1366,11 @@ input, select, textarea {
 
 		}
 
-	strong, b, h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
-		color: #363636;
-	}
+		h1, h2, h3, h4, h5, h6, strong, b {
+		    font-weight: 700; /* Utilizza il bold di Roboto */
+		    color: #1a1a1a;   /* Titoli: colore più scuro */
+		}
+
 
 	h1 {
 		font-size: 2.4em;
@@ -2188,4 +2191,42 @@ input, select, textarea {
 				margin-left: 0.5em;
 			}
 
+		}
+
+
+		.project-details .project-image-container {
+		    max-width: 300px;  /* larghezza massima */
+		    max-height: 250px; /* altezza massima */
+		    margin: 0 auto 20px; /* centrato con spazio sotto */
+		    overflow: hidden; /* nasconde parti dell'immagine che eccedono */
+				transition: box-shadow 0.3s ease;
+		}
+		.project-details .project-image-container:hover {
+		    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+		}
+		.project-details .project-image {
+		    width: 100%;     /* riempie il contenitore */
+		    height: auto;    /* mantiene le proporzioni */
+		    object-fit: cover; /* riempie il contenitore mantenendo le proporzioni */
+		    display: block;  /* rimuove spazi bianchi */
+		}
+		.social-links {
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    gap: 2rem; /* Adds space between icons */
+		    margin: 2rem 0;
+		}
+		.social-links .social-icon:not(:last-child) {
+		    margin-right: 3rem; /* aumenta lo spazio a destra per ogni icona, tranne l'ultima */
+		}
+
+		.social-links .social-icon {
+		    color: #333333; /* Cambia in bianco per contrastare lo sfondo scuro */
+		    transition: transform 0.3s ease, color 0.3s ease;
+		}
+
+		.social-links .social-icon:hover {
+		    color: #1a1a1a;
+		    transform: scale(1.15);
 		}
