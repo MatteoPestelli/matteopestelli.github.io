@@ -2265,3 +2265,165 @@ input, select, textarea {
 	        font-size: 0.9rem;
 	    }
 	}
+
+/* Layout a grid per la sezione delle pubblicazioni */
+.publications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Stile per ogni scheda di pubblicazione */
+.publication {
+    background-color: #f9f9f9;      /* Colore di sfondo chiaro per contrastare il riquadro bianco */
+    border-radius: 8px;             /* Angoli arrotondati */
+    padding: 1.5rem;                /* Spazio interno generoso */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Leggera ombra per dare profondità */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto hover per aumentare dinamismo */
+.publication:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Personalizzazione dei titoli e paragrafi all'interno delle pubblicazioni */
+.publication h3 {
+    color: #1a1a1a;    /* Colore più scuro per i titoli */
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.publication p {
+    color: #333333;    /* Testo principale in colore intermedio */
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* Responsive: riduzione dei gap e padding su schermi piccoli */
+@media (max-width: 736px) {
+    .publications-list {
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+    .publication {
+        padding: 1rem;
+    }
+}
+
+
+/* Layout a grid per il pannello degli Events/Exhibitions */
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Stile per ogni card di evento/exhibition */
+.event {
+    display: block;               /* Rende l'intera card cliccabile */
+    background-color: #f9f9f9;      /* Sfondo chiaro in contrasto con il riquadro bianco */
+    border-radius: 8px;             /* Angoli arrotondati */
+    padding: 1.5rem;                /* Spazio interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Leggera ombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;          /* Rimuove eventuali underline dal link */
+    color: inherit;                /* Mantiene il colore del testo definito globalmente */
+}
+
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Titolo dell'evento */
+.event h3 {
+    color: #1a1a1a;    /* Colore scuro per il titolo */
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+/* Immagine dell'evento */
+.event img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+/* Descrizione dell'evento */
+.event p {
+    color: #333333;    /* Colore intermedio per il testo */
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* Responsive: Adattamento per dispositivi piccoli */
+@media (max-width: 736px) {
+    .events-list {
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+    .event {
+        padding: 1rem;
+    }
+}
+
+/* Layout a grid per la sezione Projects */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Stile per ogni card del progetto */
+.project {
+    display: block;               /* Rende l'intera card cliccabile */
+    background-color: #f9f9f9;      /* Sfondo chiaro in contrasto con il riquadro bianco */
+    border-radius: 8px;             /* Angoli arrotondati */
+    padding: 1.5rem;                /* Spazio interno generoso */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Leggera ombra per dare profondità */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;          /* Rimuove underline dal link */
+    color: inherit;                /* Mantiene il colore del testo definito globalmente */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Stile per il titolo del progetto */
+.project h3 {
+    color: #1a1a1a;    /* Colore scuro per il titolo */
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+/* Stile per l'immagine del progetto */
+.project img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+/* Stile per la descrizione del progetto */
+.project p {
+    color: #333333;    /* Colore intermedio per il testo */
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* Responsive: Adattamento per dispositivi piccoli */
+@media (max-width: 736px) {
+    .projects-list {
+        gap: 1.5rem;
+        padding: 0.5rem;
+    }
+    .project {
+        padding: 1rem;
+    }
+}
