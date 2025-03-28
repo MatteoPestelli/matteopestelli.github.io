@@ -2230,3 +2230,38 @@ input, select, textarea {
 		    color: #1a1a1a;
 		    transform: scale(1.15);
 		}
+
+		/* Stile personalizzato per il pulsante di download del CV */
+	.cv-download {
+	    display: inline-flex;
+	    align-items: center;
+	    background-color: #222; /* colore di base del pulsante */
+	    color: #ffffff;         /* testo in bianco per contrasto sul riquadro bianco */
+	    padding: 1rem 1.5rem;
+	    border-radius: 0.5rem;
+	    text-decoration: none;
+	    font-size: 1rem;
+	    transition: background-color 0.3s ease, transform 0.3s ease;
+	    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	}
+
+	.cv-download:hover {
+	    background-color: #333; /* colore leggermente più chiaro al passaggio del mouse */
+	    transform: translateY(-2px); /* leggera animazione di sollevamento */
+	}
+
+	.cv-download .icon {
+	    margin-right: 0.5rem;
+	}
+
+	.cv-download .cv-text {
+	    font-weight: 700;
+	}
+
+	/* Responsive: Adattamento per dispositivi con schermo piccolo */
+	@media (max-width: 736px) {
+	    .cv-download {
+	        padding: 0.75rem 1rem;
+	        font-size: 0.9rem;
+	    }
+	}
