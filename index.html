@@ -23,8 +23,10 @@
 			<a href="#home" class="icon solid fa-home"><span>Home</span></a>
 			<a href="#projects" class="icon solid fa-folder"><span>Projects</span></a>
 			<a href="#publications" class="icon solid fa-book"><span>Publications</span></a>
+			<a href="#events" class="icon solid fa-calendar-alt"><span>Events/Exhibitions</span></a>
 			<a href="#contact" class="icon solid fa-address-card"><span>Contact</span></a>
 		</nav>
+		
 
 		<!-- Main -->
 		<div id="main">
@@ -48,43 +50,33 @@
 					<img src="images/me.jpg" alt="Matteo Pestelli" />
 				</a>
 			</article>
-
+			
 			<!-- Projects -->
 			<article id="projects" class="panel">
 				<header>
 					<h2>Projects</h2>
 				</header>
-				<section class="project-grid">
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<div class="project-card">
-								<a href="#drops-project" class="image fit"><img src="images/drops.png" alt="DROPS Project"></a>
-								<h3>DROPS: Drone-based CPS</h3>
-								<p>Cyber-Physical-Human System for roadwork operators' safety using drone technologies and artificial vision.</p>
-							</div>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<div class="project-card">
-								<a href="#safety-shield-project" class="image fit"><img src="images/safety-shield.jpg" alt="Safety Shield"></a>
-								<h3>Safety Shield</h3>
-								<p>Innovative highway safety system developed for Maker Faire 2024, utilizing advanced detection and artificial vision technologies.</p>
-							</div>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<div class="project-card">
-								<a href="#bunker-project" class="image fit"><img src="images/bunker.jpg" alt="Management and Control of a Safety Bunker"></a>
-								<h3>Management and Control of a Safety Bunker</h3>
-								<p>Comprehensive control system for a safety bunker, integrating hardware and software technologies.</p>
-							</div>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<div class="project-card">
-								<a href="#kuramoto-project" class="image fit"><img src="images/kuramoto.PNG" alt="Kuramoto Oscillators"></a>
-								<h3>Kuramoto Oscillators Simulation</h3>
-								<p>Implementation and simulation of Kuramoto oscillators in network and automation systems.</p>
-							</div>
-						</div>
-					</div>
+				<section class="projects-list">
+					<a href="#drops-project" class="project">
+						<h3>DROPS: Drone-based Roadwork Operators Protection System</h3>
+						<img src="images/drops.png" alt="DROPS Project">
+						<p>Cyber-Physical-Human System for roadwork operators' safety using drone technologies and artificial vision.</p>
+					</a>
+					<a href="#safety-shield-project" class="project">
+						<h3>Safety Shield</h3>
+						<img src="images/safety-shield.png" alt="Safety Shield">
+						<p>Innovative highway safety system developed for Maker Faire 2024, utilizing advanced detection and artificial vision technologies.</p>
+					</a>
+					<a href="#bunker-project" class="project">
+						<h3>Management and Control of a Safety Bunker</h3>
+						<img src="images/bunker.png" alt="Management and Control of a Safety Bunker">
+						<p>Comprehensive control system for a safety bunker, integrating hardware and software technologies.</p>
+					</a>
+					<a href="#kuramoto-project" class="project">
+						<h3>Kuramoto Oscillators Simulation</h3>
+						<img src="images/kuramoto.png" alt="Kuramoto Oscillators">
+						<p>Implementation and simulation of Kuramoto oscillators in network and automation systems.</p>
+					</a>
 				</section>
 			</article>
 
@@ -94,7 +86,7 @@
 					<span class="icon solid fa-arrow-left"></span>
 				</a>
 				<header>
-					<h2>DROPS: Drone-based CPS</h2>
+					<h2>DROPS: Drone-based Roadwork Operators Protection System</h2>
 				</header>
 				<section class="project-details">
 					<div class="project-image-container">
@@ -136,7 +128,7 @@
 				</header>
 				<section class="project-details">
 					<div class="project-image-container">
-						<img src="images/safety-shield.jpg" alt="Safety Shield" class="project-image" />
+						<img src="images/safety-shield.png" alt="Safety Shield" class="project-image" />
 					</div>
 					<div class="project-description">
 						<h3>Project Overview</h3>
@@ -174,7 +166,7 @@
 			    </header>
 			    <section class="project-details">
 			        <div class="project-image-container">
-			            <img src="images/bunker.jpg" alt="Management and Control of a Safety Bunker" class="project-image"/>
+			            <img src="images/bunker.png" alt="Management and Control of a Safety Bunker" class="project-image"/>
 			        </div>
 			        <div class="project-description">
 			            <h3>Project Overview</h3>
@@ -212,7 +204,7 @@
 				</header>
 				<section class="project-details">
 					<div class="project-image-container">
-						<img src="images/kuramoto.PNG" alt="Kuramoto Oscillators" class="project-image" />
+						<img src="images/kuramoto.png" alt="Kuramoto Oscillators" class="project-image" />
 					</div>
 					<div class="project-description">
 						<h3>Project Overview</h3>
@@ -240,43 +232,102 @@
 					</div>
 				</section>
 			</article>
+
+			<!-- Publications -->
 			<article id="publications" class="panel">
 				<header>
 					<h2>Publications</h2>
 				</header>
 				<section class="publications-list">
-					<div class="publication">
+					 <div class="publication publication-card">
 						<h3>DROPS: A Drone Based Cyber-Physical-Human System for Workers' Safety in Road Construction Sites</h3>
-						<p><strong>Date:</strong> March 15, 2025</p>
+						<p><strong>Date:</strong> March 01, 2025</p>
 						<p><strong>Conference:</strong> IROS 2025 (Submitted)</p>
 						<p><strong>Authors:</strong> Matteo Pestelli, Federica Pascucci, Charalambos Kyriakou, Christos Laoudias, Christos Kyrkou, and Graziana Cavone</p>
 						<p><strong>Abstract:</strong> This work presents the design of DROPS (Drone-based Roadwork Operators Protection System), a human cyber-physical drone-based system to improve worker safety in road construction sites, integrating computer
 							vision, smart wearable devices, and wireless communications.</p>
 					</div>
 
-					<div class="publication">
+					 <div class="publication publication-card">
 						<h3>Master's Thesis: DROPS - Drone-based Cyber-Physical-Human System for Roadwork Operators Protection</h3>
-						<p><strong>Date:</strong> February 28, 2025</p>
+						<p><strong>Date:</strong> March 18, 2025</p>
 						<p><strong>University:</strong> Roma Tre University</p>
 						<p><strong>Department:</strong> Department of Civil, Computer, and Aeronautical Technologies Engineering</p>
-						<p><strong>Keywords:</strong> Human-centered Automation, Unmanned Aircraft Systems, Artificial Vision for Automation</p>
-						<p><strong>Advisor:</strong> Prof. Ing. Graziana Cavone</p>
+						<p><strong>Subject:</strong> Cyber Physical Systems</p>
+						<p><strong>Keywords:</strong> Human-centered Automation, Unmanned Aircraft Systems, Computer Vision for Automation</p>
+						<p><strong>Supervisor:</strong> Prof. Ing. Graziana Cavone</p>
+						<p><strong>Co-supervisors:</strong> Prof. Ing. Federica Pascucci, Prof. Ing. Christos Laoudias</p>
 						<p><strong>Degree:</strong> Master's in Management and Automation Engineering (LM-32)</p>
+						<p><strong>Curriculum:</strong> Automation of Complex Systems</p>
 						<p><strong>Grade:</strong> 110/110 with honors</p>
 					</div>
 
-					<div class="publication">
+					 <div class="publication publication-card">
 						<h3>Bachelor's Thesis: Implementation and Simulation of Kuramoto Oscillators</h3>
-						<p><strong>Date:</strong> July 10, 2023</p>
+						<p><strong>Date:</strong> March 18, 2022</p>
 						<p><strong>University:</strong> Roma Tre University</p>
 						<p><strong>Department:</strong> Department of Civil, Computer, and Aeronautical Technologies Engineering</p>
 						<p><strong>Subject:</strong> Networks and Automation Systems</p>
-						<p><strong>Advisor:</strong> Prof. Ing. Chiara Foglietta</p>
+						<p><strong>Keywords:</strong> Kuramoto Oscillators, Synchronization, Nonlinear Systems</p>
+						<p><strong>Supervisor:</strong> Prof. Ing. Chiara Foglietta</p>
 						<p><strong>Degree:</strong> Bachelor's in Computer Engineering</p>
-						<p><strong>Grade:</strong> 93/110</p>
+						<p><strong>Curriculum:</strong> Management and Automation</p>
 					</div>
 				</section>
 			</article>
+
+			<!-- Events/Exhibitions -->
+			<article id="events" class="panel">
+				<header>
+					<h2>Events/Exhibitions</h2>
+				</header>
+				<section class="events-list">
+					<!-- Primo Evento -->
+					<a href="https://www.romecup.org/" class="event">
+						<h3>RomeCup 2025</h3>
+						<p class="event-meta">
+							<strong>Date:</strong> May 7–9, 2025<br>
+							<strong>Location:</strong> Roma Tre Headquarters, Via Vito Volterra 62 &amp; Campidogliol<br>
+							<strong>Role:</strong> Referee<br>
+							<strong>Curator:</strong> RomeCup
+						</p>
+						<img src="Images/RomeCup2025.png" alt="RomeCup 2025">
+						<p class="event-description">
+							I served as a referee for the RomeCup 2025 robotics competitions, specifically for the Rescue and Explorer categories. I collaborated closely with students, researchers, and robotics enthusiasts from across Italy.
+						</p>
+					</a>
+					<!-- Secondo Evento -->
+					<a href="https://www.facebook.com/MakerFaireRome/posts/pfbid028RAYVHcmCzCBgJy3R55phYMQtUoH3jJMESmYn2LbFXy8eduvkdfC5bNG2so7frqzl" class="event">
+						<h3>Enabling Technologies 5.0 for Automation Systems</h3>
+						<p class="event-meta">
+							<strong>Date:</strong> December 5, 2024<br>
+							<strong>Location:</strong> Spazio Attivo Ferentino, Via Casilina km 68.300 (Ferentino)<br>
+							<strong>Role:</strong> Speaker<br>
+							<strong>Curator:</strong> Maker Faire Rome – The European Edition
+						</p>
+						<img src="Images/LezioneFerentino.png" alt="Enabling Technologies 5.0">
+						<p class="event-description">
+							I delivered an in-depth lecture on the impact of enabling technologies such as cloud computing, VR/AR, IoT, and big data. These technologies are revolutionizing production, resource management, and market adaptation, while offering new prospects for sustainability and growth.
+						</p>
+					</a>
+					<!-- Terzo Evento -->
+					<a href="https://www.facebook.com/CPSRM3/posts/pfbid0LYNTGitrFda6dCjrm2TukSxQTsHuQLdLbUFDZAAR6jDdt3iBSrmkknYWt2399Zpnl" class="event">
+						<h3>Maker Faire 2024</h3>
+						<p class="event-meta">
+							<strong>Date:</strong> October 25–27, 2024<br>
+							<strong>Location:</strong> Gazometro Ostiense<br>
+							<strong>Role:</strong> Maker and Presenter<br>
+							<strong>Curator:</strong> Maker Faire
+						</p>
+						<img src="Images/MF2024.png" alt="Maker Faire 2024">
+						<p class="event-description">
+							At Maker Faire 2024, I showcased Safety Shield, a CPHS developed with students from the Cyber Physical Systems program of the Master’s in Management and Automation Engineering. The project was exhibited at the Roma Tre University booth, demonstrating innovative highway safety solutions.
+						</p>
+					</a>
+				</section>
+			</article>
+
+
 
 			<!-- Contact -->
 			<article id="contact" class="panel">
